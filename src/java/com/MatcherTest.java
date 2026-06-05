@@ -3,8 +3,6 @@ package com;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.MatcherUtil.PatternEnum;
-
 public class MatcherTest {
 	
 	public void runTest() {
@@ -19,7 +17,7 @@ public class MatcherTest {
 		//String input = "abc@samsung.co.kr";
 		//String input = "02.1234.5678";
 		//String input = "가나다라마바사";
-		String input = "$.dasfasfsdafdsafsd=@samsung.co.kr$.dasfasfsdafdsafsd=";
+		String input = "$.dasfasfsdafdsafsd==@samsung.co.kr$.dasfasfsdafdsafsd=";
 		//String input = "02.1234.$.dasfasfsdafdsafsd=";
 		PatternEnum patternEnum = MatcherUtil.getMatcherType(input);
 		Matcher matcher = patternEnum.toPattern().matcher(input);
