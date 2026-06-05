@@ -45,7 +45,7 @@ public class MatcherTest {
 	        
 		} else {
 			if (matcher.find()) {
-				System.out.println("group:" + matcher.group());
+				System.out.println("group:" + matcher.group("allData"));
 			} else {
 				System.out.println("Pattern not found");
 			}
