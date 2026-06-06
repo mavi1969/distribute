@@ -16,8 +16,9 @@ public class MatcherTest {
 	public void testMatcher() {
 		//String input = "abc@samsung.co.kr";
 		//String input = "02.1234.5678";
-		String input = "가나다라@마바사";
-		//String input = "$.dasfasfsdafdsafsd==@samsung.co.kr$.dasfasfsdafdsafsd=";
+		
+		//String input = "가나다라@마바사";
+		String input = "$.dasfasfsdafdsafsd==@samsung.co.kr$.dasfasfsdafdsafsd=";
 		//String input = "02.1234.$.dasfasfsdafdsafsd=";
 		PatternEnum patternEnum = MatcherUtil.getMatcherType(input);
 		Matcher matcher = patternEnum.toPattern().matcher(input);
